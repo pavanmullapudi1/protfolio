@@ -63,7 +63,7 @@ function IntroBlock() {
   };
   return (
     <div className="intro">
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-row" style={{ width: "1279px" }}>
         <div className="left-info-text" style={leftInfo}>
           <p style={textStyle}>
             Passionate about transforming ideas into intuitive designs and

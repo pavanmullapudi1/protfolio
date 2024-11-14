@@ -38,6 +38,7 @@ function VisionMission() {
   };
   const visionMission = {
     position: "relative",
+    width: "1279px",
   };
   const vissionText = {
     fontSize: "12px",

@@ -27,6 +27,7 @@ function AboutMe() {
   };
   const aboutMePlace = {
     position: "relative",
+    width: "1279px",
   };
   const aboutText = {
     fontSize: "12px",
