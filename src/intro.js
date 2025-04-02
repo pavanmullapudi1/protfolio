@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "./assets/images/intro.jpg";
+import "./App.scss";
+
 function IntroBlock() {
   const leftInfo = {
     width: "50%",
@@ -13,7 +15,7 @@ function IntroBlock() {
     fontStyle: "normal",
     fontSize: "20px",
     textTransform: "uppercase",
-    color: "rgb(203, 153, 126)",
+    color: "#fff",
     marginBottom: "0px",
     marginTop: "auto",
     bottom: "150px",
@@ -27,20 +29,26 @@ function IntroBlock() {
     fontSize: "48px",
     bottom: "89px",
     right: "0px",
+    zIndex: 1,
     letterSpacing: "6px",
   };
   const line = {
     height: "8px",
-    background: "#DDBEA9",
+    background: "#4A90E2",
+    position: "absolute",
+    right: "0px",
+    width: "166px",
+    top: "61px",
   };
   const lineD = {
     height: "8px",
-    background: "#505050",
+    background: "rgb(74, 144, 226)",
   };
   const pSTyle = {
     margin: "0px",
-    height: "62px",
-    color: "#DDBEA9",
+    height: "69px",
+    top: "10px",
+    color: "#FFB400",
   };
   const pSTyleD = {
     margin: "0px",
@@ -56,14 +64,15 @@ function IntroBlock() {
   };
   const TextSty = {
     margin: "0px",
+    zIndex: 1,
     height: "61px",
   };
   const rightInfo = {
     position: "relative",
   };
   return (
-    <div className="intro">
-      <div className="d-flex flex-row" style={{ width: "1279px" }}>
+    <div className="intro" style={{ width: "1279px" }}>
+      <div className="d-flex flex-row">
         <div className="left-info-text" style={leftInfo}>
           <p style={textStyle}>
             Passionate about transforming ideas into intuitive designs and
@@ -124,7 +133,7 @@ function IntroBlock() {
               />
               <path
                 d="M34.9387 58.0675V57.7669V52.3559M37.043 41.8344L34.9387 46.3436M37.043 41.8344L39.4479 37.3252M37.043 41.8344L31.9326 37.9264L32.5338 36.4233M34.9387 52.3559L32.5338 51.1534L28.3252 48.7485M34.9387 52.3559L39.4479 48.7485M34.9387 52.3559L34.3375 46.9448L34.9387 46.3436M34.9387 46.3436L29.5276 41.8344M34.9387 46.3436L37.043 45.4417L39.7485 42.7362"
-                stroke="black"
+                stroke="brown"
                 strokeWidth="0.601227"
               />
               <path
@@ -173,17 +182,22 @@ function IntroBlock() {
               />
             </svg>
           </div>
-          <div style={uiuixDesign}>
+          <div style={uiuixDesign} className="block-transition">
             <p style={pSTyle}>UI/UX</p>
-            <div style={line}></div>
+            <div
+              style={line}
+              className="line-transition line-transition1"
+            ></div>
           </div>
         </div>
         <div style={rightInfo}>
-          <div style={pSTyleD}>
+          <div style={pSTyleD} className="block-transition">
             <p style={TextSty}>Designer.....</p>
-            <div style={lineD}></div>
+            <div style={lineD} className="line-transition"></div>
           </div>
-          <img src={logo} alt="logo" />
+          <div className="intoImg">
+            <img src={logo} alt="logo" />
+          </div>
         </div>
       </div>
     </div>

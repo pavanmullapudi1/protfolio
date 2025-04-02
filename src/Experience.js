@@ -13,16 +13,14 @@ function Experience() {
   const aboutMe = {
     margin: "0px",
     height: "62px",
-    background:
-      "linear-gradient(90deg, rgba(177, 177, 129, 1) 13%, rgba(215, 213, 204, 1) 50%) text",
-    WebkitTextFillColor: "transparent",
+    color: "#FFB400",
     position: "absolute",
     fontFamily: "Inter, sans-serif",
     fontWeight: 500,
     fontSize: "48px",
     top: "5px",
     textTransform: "uppercase",
-    right: "288px",
+    right: "148px",
     wordSpacing: "-5px",
   };
   const aboutMePlace = {
@@ -31,12 +29,10 @@ function Experience() {
   };
   const aboutText = {
     fontSize: "12px",
-    background: "rgb(37, 37, 37)",
     padding: "10px",
     width: "442px",
     color: "rgb(183, 183, 164)",
     verticalAlign: "middle",
-    alignItems: ["center", "flex-start"],
     display: "flex",
     flexDirection: "column",
     height: "137px",

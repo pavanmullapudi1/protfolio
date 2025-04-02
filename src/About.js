@@ -13,17 +13,14 @@ function AboutMe() {
   const aboutMe = {
     margin: "0px",
     height: "62px",
-    background:
-      "linear-gradient(90deg, rgb(215, 213, 204) 35%, rgb(177, 177, 129) 50%) text",
-    WebkitTextFillColor: "transparent",
     position: "absolute",
     fontFamily: "Inter, sans-serif",
     fontWeight: 500,
     fontSize: "48px",
     top: "5px",
     textTransform: "uppercase",
-    left: "386px",
     wordSpacing: "-5px",
+    color: "#FF4D88",
   };
   const aboutMePlace = {
     position: "relative",
@@ -31,11 +28,10 @@ function AboutMe() {
   };
   const aboutText = {
     fontSize: "12px",
-    background: "rgb(37, 37, 37)",
     padding: "10px",
     width: "442px",
     height: "92px",
-    color: "rgb(183, 183, 164)",
+    color: "#A1A1A1",
     verticalAlign: "middle",
     alignItems: "center",
     display: "flex",

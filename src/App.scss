@@ -1,0 +1,100 @@
+.App{
+  background: black;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: white;
+}
+#root{
+  background-color: black;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: black;
+}
+
+*:focus{
+  outline: none;
+  box-shadow: 0px 0px 0px 0px transparent;
+  
+} 
+.Dropdown-root .Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 6px 52px 6px 10px;
+  transition: all 200ms ease;
+}
+.cursorEvent{
+  cursor: pointer;
+  user-select: none;
+}
+.block-transition{
+  z-index: 1;
+}
+.block-transition:hover {
+  .line-transition{
+    // background-color: rgb(80, 80, 80) !important;
+  animation: backgroundChange 0.8s  forwards ease-in-out;
+  }
+  .line-transition1{
+    // background-color: rgb(80, 80, 80) !important;
+  animation: backgroundChange1 0.6s  reverse ease-in-out;
+  }
+}
+
+@keyframes backgroundChange {
+  0% {
+    width: 0%;
+    left: 0px;
+    // background-color: transparent;
+  }
+  100% {
+    width: 100%;
+    left: 0px;
+
+  }
+}
+@keyframes backgroundChange1 {
+  0% {
+    width: 100%;
+    right: 0px;
+    background-color: rgb(221, 190, 169);
+  }
+
+  100% {
+    width: 0%;
+    background-color: rgb(221, 190, 169);
+    right: 0px;
+  }
+}
+
+.figma{
+  transition: width 800ms;
+}
+.figma:hover{
+  width: 70px;
+}
+.intoImg {
+  width: 794px;
+  height: 314px;
+  overflow: hidden;
+  // display: inline-block;
+}
+
+.intoImg img {
+  transition: transform 0.2s linear;
+  transform: scale(1);
+}
+
+.intoImg:hover img {
+  transform: scale(1.1);
+}

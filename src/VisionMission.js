@@ -11,30 +11,26 @@ function VisionMission() {
   const vision = {
     margin: "0px",
     height: "62px",
-    background: "linear-gradient(90deg, #D7D5CC 50%, #B1B181 50%)",
-    backgroundClip: "text",
-    WebkitTextFillColor: "transparent",
     position: "absolute",
     fontFamily: "Inter, sans-serif",
     fontWeight: 500,
     fontSize: "48px",
     top: "5px",
     textTransform: "uppercase",
-    left: "411px",
+    zIndex: 1,
+    color: "#9B51E0",
   };
   const mission = {
     margin: "0px",
     height: "62px",
-    background:
-      "linear-gradient(90deg, rgb(215, 213, 204) 36%, rgb(177, 177, 129) 50%) text",
-    WebkitTextFillColor: "transparent",
     position: "absolute",
     fontFamily: "Inter, sans-serif",
     fontWeight: 500,
     fontSize: "48px",
     top: "159px",
     textTransform: "uppercase",
-    left: "402px",
+    zIndex: 1,
+    color: "#41E884",
   };
   const visionMission = {
     position: "relative",
@@ -42,12 +38,11 @@ function VisionMission() {
   };
   const vissionText = {
     fontSize: "12px",
-    background: "#252525",
     padding: "10px",
     marginTop: "67px",
     width: "442px",
     height: "92px",
-    color: "#B7B7A4",
+    color: "#B0B0B0",
   };
   return (
     <div className="mt-1" style={visionMission}>
@@ -75,7 +70,9 @@ function VisionMission() {
           </div>
         </div>
         <div>
-          <img src={vandm} alt="logo" style={vandmStyle} />
+          <div className="intoImg">
+            <img src={vandm} alt="logo" style={vandmStyle} />
+          </div>
         </div>
       </div>
     </div>
