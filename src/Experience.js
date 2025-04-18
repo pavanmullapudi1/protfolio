@@ -48,10 +48,11 @@ function Experience() {
           <div style={aboutText}>
             <h3>PMS</h3>
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available
+              Designed intuitive user interfaces and improved user experience,
+              resulting in a 35% increase in user engagement and a 25% boost in
+              retention within six months. - Created responsive designs with
+              Figma, improving user satisfaction scores by 25% via usability
+              testing and iterative feedback
             </p>
           </div>
         </div>
